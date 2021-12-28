@@ -1,0 +1,21 @@
+Comentarios = {}
+no_comments = 1
+Comentarios[no_comments] ={title="Hola...",msg="David: hahah",fecha="20/12/2014 @ 22:51:38"}
+SUMA_Comment()
+Comentarios[no_comments] ={title="Bien ",msg="David: el problema estaba en php",fecha="21/12/2014 @ 07:27:05"}
+SUMA_Comment()
+Comentarios[no_comments] ={title="mn",msg="David: ",fecha="21/12/2014 @ 07:50:29"}
+SUMA_Comment()
+Comentarios[no_comments] ={title="hola.",msg="David: espero aparesca...",fecha="21/12/2014 @ 09:10:37"}
+SUMA_Comment()
+Comentarios[no_comments] ={title=":(",msg="David: :C",fecha="21/12/2014 @ 09:12:27"}
+SUMA_Comment()
+Comentarios[no_comments] ={title="hola 2da",msg="David: Prueba...",fecha="21/12/2014 @ 16:30:03"}
+SUMA_Comment()
+Comentarios[no_comments] ={title="Hola?",msg="David: Funciona?",fecha="21/12/2014 @ 16:31:54"}
+SUMA_Comment()
+Comentarios[no_comments] ={title="hola juan",msg="David: hahah!!!!!",fecha="21/12/2014 @ 17:59:33"}
+SUMA_Comment()
+Comentarios[no_comments] ={title="",msg="P785: hola",fecha="08/05/2011 @ 23:21:48"}
+SUMA_Comment()
+Comentarios[no_comments] ={title="El Release llego",msg="David: Es Genial!!!",fecha="23/12/2014 @ 20:03:11"}
