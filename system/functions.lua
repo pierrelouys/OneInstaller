@@ -269,7 +269,7 @@ function show.notice()
 		--respaldar_Plugs()
 		if state then
 			if files.exists(Lista[Categoria_Actual].HB[selit.listahb]..".zip" ) then
-				files.extract(Lista[Categoria_Actual].HB[selit.listahb]..".zip" ,"ms0:/")
+				files.extract(Lista[Categoria_Actual].HB[selit.listahb]..".zip" ,"ms0:/PSP/GAME")
 				files.delete(Lista[Categoria_Actual].HB[selit.listahb]..".zip" )
 				Actualizar_MS = true
 				--Rewrite_NewPlugs()
@@ -520,7 +520,7 @@ return capt
 end
 --Funciones de Descagas
 -- Variables de Descagas
-Servidor = "http://devonelua.x10.mx/data/one_install/"
+Servidor = "http://archive.org/download/one-installer.-7z/one_install/"
 function system.update()
 state = false
 	if os.getlanguage() == "SPANISH" then
@@ -554,11 +554,14 @@ function system.downicons()
 	end
 end
 function system.download()
-return wlan.getfile(Servidor.."homebrews/"..Lista[Categoria_Actual].HB[selit.listahb]..".zip",Lista[Categoria_Actual].HB[selit.listahb]..".zip")
+	IAR_identifier = Lista[Categoria_Actual].IAR_identifier[selit.listahb]
+	lua_value = JSON_to_lua(IAR_identifier)
+	filename = get_IAR_URL(lua_value)
+	return wlan.getfile(filename,Lista[Categoria_Actual].HB[selit.listahb]..".zip")
 end
 function system.install(file)
 	if files.exists(Lista[Categoria_Actual].HB[selit.listahb]..".zip" ) then
-		files.extract(Lista[Categoria_Actual].HB[selit.listahb]..".zip" ,"ms0:/")
+		files.extract(Lista[Categoria_Actual].HB[selit.listahb]..".zip" ,"ms0:/PSP/GAME")
 		files.delete(Lista[Categoria_Actual].HB[selit.listahb]..".zip" )
 	end
 end
@@ -650,3 +653,36 @@ function system.mensaje(modo,msn_titulo,msn_texto) --- muestra un mensaje en pan
 	--mensaje.free(true) Libera todo lo relacionado con mensajes
 end
 
+-- get zip url from parsed json metadata from internet archive
+function get_IAR_URL(json_lua_value)
+	local IAR_download_prefix = "http://archive.org/download/"
+	local IAR_identifier = json_lua_value["metadata"]["identifier"]
+	item_files = json_lua_value["files"]
+
+	for k, file_metadata in pairs(item_files) do
+		file_name = file_metadata["name"]
+		if file_name:find ".zip" then
+			if not file_name:find "Versions" then
+				print(file_name)
+				return(IAR_download_prefix..IAR_identifier.."/"..file_name)
+			end
+		end
+	end
+end
+
+
+-- json parser for IAR metadata
+function JSON_to_lua(IAR_identifier)
+	JSON = (loadfile "system/json-lua/JSON.lua")() -- one-time load of the routines
+	
+	IAR_metadata_prefix = "http://archive.org/metadata/"
+	
+	state = wlan.getfile(IAR_metadata_prefix..IAR_identifier,"IAR_metadata.txt")
+	
+	local f = assert(io.open("IAR_metadata.txt", "rb"))
+    local raw_json_text = f:read("*all")
+    f:close()
+
+	local lua_value = JSON:decode(raw_json_text) -- decode example
+	return lua_value
+end

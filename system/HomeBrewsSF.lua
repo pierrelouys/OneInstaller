@@ -6,22 +6,23 @@ Cat_Games = 1
 Cat_Emus = 2
 Cat_Launch = 4
 Cat_Themes = 6
-Lista[Cat_Launch] = {Title = {},Des = {},HB = {},Ver = {},Autor = {},Size = {},Cap = {},ico = {},defico = {}}
-Lista[Cat_HomeBrews] = {Title = {},Des = {},HB = {},Ver = {},Autor = {},Size = {},Cap = {},ico = {},defico = {}}
-Lista[Cat_Plugins] = {Title = {},Des = {},HB = {},Ver = {},Autor = {},Size = {},Cap = {},ico = {},defico = {}}
-Lista[Cat_Games] = {Title = {},Des = {},HB = {},Ver = {},Autor = {},Size = {},Cap = {},ico = {},defico = {}}
-Lista[Cat_Themes] = {Title = {},Des = {},HB = {},Ver = {},Autor = {},Size = {},Cap = {},ico = {},defico = {}}
-Lista[Cat_Emus] = {Title = {},Des = {},HB = {},Ver = {},Autor = {},Size = {},Cap = {},ico = {},defico = {}}
+Lista[Cat_Launch] = {Title = {},IAR_identifier = {},Des = {},HB = {},Ver = {},Autor = {},Size = {},Cap = {},ico = {},defico = {}}
+Lista[Cat_HomeBrews] = {Title = {},IAR_identifier = {},Des = {},HB = {},Ver = {},Autor = {},Size = {},Cap = {},ico = {},defico = {}}
+Lista[Cat_Plugins] = {Title = {},IAR_identifier = {},Des = {},HB = {},Ver = {},Autor = {},Size = {},Cap = {},ico = {},defico = {}}
+Lista[Cat_Games] = {Title = {},IAR_identifier = {},Des = {},HB = {},Ver = {},Autor = {},Size = {},Cap = {},ico = {},defico = {}}
+Lista[Cat_Themes] = {Title = {},IAR_identifier = {},Des = {},HB = {},Ver = {},Autor = {},Size = {},Cap = {},ico = {},defico = {}}
+Lista[Cat_Emus] = {Title = {},IAR_identifier = {},Des = {},HB = {},Ver = {},Autor = {},Size = {},Cap = {},ico = {},defico = {}}
 
 no_emu = 1
 Lista[Cat_Emus].Title[no_emu] = "MasterBoy"
+Lista[Cat_Emus].IAR_identifier[no_emu] = "masterboy.-7z"
 Lista[Cat_Emus].HB[no_emu] = "MasterBoy"
 Lista[Cat_Emus].Autor[no_emu] = "Brunni"
 Lista[Cat_Emus].Ver[no_emu] = "3.1"
 Lista[Cat_Emus].Size[no_emu] = "3.66 Mb"
 Lista[Cat_Emus].Cap[no_emu] = 3
 Lista[Cat_Emus].defico[no_emu] = false
-Lista[Cat_Emus].Des[no_emu] = [[MasterBoy es un fantástico emulador 
+Lista[Cat_Emus].Des[no_emu] = [[MasterBoy is a really cool emulador 
 								para nuestras PSP's, en el podremos 
 								jugar grandes clásicos de Game Boy y 
 								Game Boy Color, con un manejo bastánte 
@@ -34,6 +35,7 @@ Lista[Cat_Emus].Des[no_emu] = [[MasterBoy es un fantástico emulador
 								opciones para disfrutar.]]
 no_emu = no_emu + 1
 Lista[Cat_Emus].Title[no_emu] = "gpSP Kai"
+Lista[Cat_Emus].IAR_identifier[no_emu] = "gp-sp-kai-v-3.4-test-4-b-230fat.-7z"
 Lista[Cat_Emus].HB[no_emu] = "uogpsp"
 Lista[Cat_Emus].Autor[no_emu] = "Takka"
 Lista[Cat_Emus].Ver[no_emu] = "3.4"
@@ -46,6 +48,7 @@ Lista[Cat_Emus].Des[no_emu] = [[gpSP Kai es el emulador de GBA para PSP,
 								Clasico de esta consola.]]
 no_emu = no_emu + 1
 Lista[Cat_Emus].Title[no_emu] = "NesterJ AoEX"
+Lista[Cat_Emus].IAR_identifier[no_emu] = "nintendo-nester-j-ao-ex-r-3.7z"
 Lista[Cat_Emus].HB[no_emu] = "NesterJAoEX"
 Lista[Cat_Emus].Autor[no_emu] = "ShimaFlareX"
 Lista[Cat_Emus].Ver[no_emu] = "r3"
@@ -61,6 +64,7 @@ Lista[Cat_Emus].Des[no_emu] = [[Esta nueva versión de emulador para
 								clásicos juegos NES en nuestras PSP´s.]]
 no_emu = no_emu + 1
 Lista[Cat_Emus].Title[no_emu] = "Snes9xTYL mecm"
+Lista[Cat_Emus].IAR_identifier[no_emu] = "s9xTYLme_mod.7z"
 Lista[Cat_Emus].HB[no_emu] = "Snes9xTYLmecm"
 Lista[Cat_Emus].Autor[no_emu] = "diadan"
 Lista[Cat_Emus].Ver[no_emu] = "Mr26"
@@ -74,6 +78,7 @@ Lista[Cat_Emus].Des[no_emu] = [[Emulador de Super Nintendo para PSP,
 								Ahora con opcion multiplayer.]]
 no_emu = no_emu + 1
 Lista[Cat_Emus].Title[no_emu] = "PicoDrive"
+Lista[Cat_Emus].IAR_identifier[no_emu] = "pico-drive-psp-151b.-7z"
 Lista[Cat_Emus].HB[no_emu] = "PicoDrive"
 Lista[Cat_Emus].Autor[no_emu] = "Notaz"
 Lista[Cat_Emus].Ver[no_emu] = "1.51b"
@@ -170,6 +175,7 @@ Lista[Cat_Launch].Des[no_lauch] = [[La evolucion del Time Machine m33
 									y maneja ipl´s (Flash0).]]
 no_game = 1
 Lista[Cat_Games].Title[no_game] = "SpaceBall"
+Lista[Cat_Emus].IAR_identifier[no_emu] = "spaceball.-7z"
 Lista[Cat_Games].HB[no_game] = "spaceball"
 Lista[Cat_Games].Autor[no_game] = "Mills"
 Lista[Cat_Games].Ver[no_game] = "Demo"
@@ -187,6 +193,7 @@ Lista[Cat_Games].Des[no_game] = [[Space Ball es el primer homebrew
 				y sin lugar a dudas les fascinará.]]
 no_game = no_game + 1
 Lista[Cat_Games].Title[no_game] = "Flappy Bird PSP"
+Lista[Cat_Emus].IAR_identifier[no_emu] = "fbird.-7z"
 Lista[Cat_Games].HB[no_game] = "Flappy_Bird_PSP"
 Lista[Cat_Games].Autor[no_game] = "Sandroron"
 Lista[Cat_Games].Ver[no_game] = "2.0"
@@ -203,6 +210,7 @@ Lista[Cat_Games].Des[no_game] = [[Espera? Flappy Bird en mi PSP?
 								de sana diversión.]]
 no_game = no_game + 1
 Lista[Cat_Games].Title[no_game] = "Mario Kart PSP"
+Lista[Cat_Emus].IAR_identifier[no_emu] = "mario-kart-psp.-7z"
 Lista[Cat_Games].HB[no_game] = "Mario_Kart_PSP"
 Lista[Cat_Games].Autor[no_game] = "Dark_Momo"
 Lista[Cat_Games].Ver[no_game] = "4.8"
@@ -263,6 +271,7 @@ Lista[Cat_HomeBrews].Des[no_app] = [[ONElua es un nuevo intérprete de LUA
 								la programacion.]]
 no_app = no_app + 1
 Lista[Cat_HomeBrews].Title[no_app] = "PSPFiler"
+Lista[Cat_Emus].IAR_identifier[no_emu] = "file-00370-00000"
 Lista[Cat_HomeBrews].HB[no_app] = "PSPFiler"
 Lista[Cat_HomeBrews].Autor[no_app] ="Mediumguage"
 Lista[Cat_HomeBrews].Ver[no_app] = "6.6"
@@ -277,6 +286,7 @@ Lista[Cat_HomeBrews].Des[no_app] = [[Explorador multifunciones,
 								Aplicacion que te sera util en la PSP]]
 no_app = no_app + 1
 Lista[Cat_HomeBrews].Title[no_app] = "Bookr"
+Lista[Cat_Emus].IAR_identifier[no_emu] = "bookr-modfw-371-4xx-5xx-20090709.7z"
 Lista[Cat_HomeBrews].HB[no_app] = "bookr"
 Lista[Cat_HomeBrews].Autor[no_app] = "nct2k"
 Lista[Cat_HomeBrews].Ver[no_app] = "09-07-09"
@@ -320,6 +330,7 @@ Lista[Cat_HomeBrews].Des[no_app] = 	[[PGE, es el interprete potente de LUA,
 									incluidos para aprender.]]
 no_app = no_app + 1
 Lista[Cat_HomeBrews].Title[no_app] = "PSPBPacker"
+Lista[Cat_Emus].IAR_identifier[no_emu] = "pspbpacker-v-3.7z"
 Lista[Cat_HomeBrews].HB[no_app] = "pspbpacker"
 Lista[Cat_HomeBrews].Autor[no_app] = "qwikrazor87"
 Lista[Cat_HomeBrews].Ver[no_app] = "3.0"
@@ -339,6 +350,7 @@ Lista[Cat_HomeBrews].Des[no_app] = [[El Coder qwikrazor87 nos sorprende
 								al igual que PSPBrew.]]
 no_app = no_app + 1
 Lista[Cat_HomeBrews].Title[no_app] = "PSPFTPD"
+Lista[Cat_Emus].IAR_identifier[no_emu] = "psp-ftpd.7z"
 Lista[Cat_HomeBrews].HB[no_app] = "pspftpd"
 Lista[Cat_HomeBrews].Autor[no_app] = "ZX-81"
 Lista[Cat_HomeBrews].Ver[no_app] = "0.5.0"
@@ -349,6 +361,7 @@ Lista[Cat_HomeBrews].Des[no_app] = [[PSPFTPD: Nos permite la transferencia
 								de archivos con el PC vi­a WIFI.]]
 no_app = no_app + 1
 Lista[Cat_HomeBrews].Title[no_app] = "KeyCleaner"
+Lista[Cat_Emus].IAR_identifier[no_emu] = "key-cleanerv-1.4.7z"
 Lista[Cat_HomeBrews].HB[no_app] = "KeyCleaner"
 Lista[Cat_HomeBrews].Autor[no_app] = "Chilly Willy"
 Lista[Cat_HomeBrews].Ver[no_app] = "1.4"
